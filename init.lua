@@ -17,3 +17,6 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- colorscheme
+vim.cmd.colorscheme "catppuccin"
