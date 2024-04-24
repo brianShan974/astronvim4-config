@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
@@ -9,6 +9,7 @@ return {
   -- == Examples of Adding Plugins ==
 
   "andweeb/presence.nvim",
+
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
@@ -80,6 +81,46 @@ return {
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
       )
+    end,
+  },
+
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "main", -- HACK: force neo-tree to checkout `main` for initial v3 migration since default branch has changed
+    dependencies = { "MunifTanjim/nui.nvim" },
+    cmd = "Neotree",
+    init = function() vim.g.neo_tree_remove_legacy_commands = true end,
+    opts = function()
+      return {
+        filesystem = {
+          filtered_items = {
+            visible = true, -- when true, they will just be displayed differently than normal items
+            hide_dotfiles = false,
+            hide_gitignored = false,
+            hide_hidden = false, -- only works on Windows for hidden files/directories
+            hide_by_name = {
+              --"node_modules"
+            },
+            hide_by_pattern = { -- uses glob style patterns
+              --"*.meta",
+              --"*/src/*/tsconfig.json",
+            },
+            always_show = { -- remains visible even if other settings would normally hide it
+              --".gitignored",
+            },
+            never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
+              ".DS_Store",
+              --"thumbs.db"
+            },
+            never_show_by_pattern = { -- uses glob style patterns
+              --".null-ls_*",
+            },
+          },
+          follow_current_file = { enabled = true },
+          hijack_netrw_behavior = "open_current",
+          use_libuv_file_watcher = vim.fn.has "win32" ~= 1,
+        },
+      }
     end,
   },
 }
