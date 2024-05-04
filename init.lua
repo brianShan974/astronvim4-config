@@ -1,3 +1,5 @@
+local g = vim.g
+
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
 local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -19,4 +21,26 @@ require "lazy_setup"
 require "polish"
 
 -- colorscheme
-vim.cmd.colorscheme "catppuccin"
+if vim.fn.has "mac" then
+  vim.cmd.colorscheme "onedark"
+elseif vim.fn.has "unix" then
+  vim.cmd.colorscheme "catppuccin"
+end
+
+-- markdown-preview.nvim
+g.mkdp_auto_start = 1
+vim.cmd [[
+  function OpenMarkdownPreview (url)
+    let cmd = "open -a Firefox -n --args --new-window " . shellescape(a:url) . " &"
+    silent call system(cmd)
+  endfunction
+]]
+g.mkdp_open_ip = "127.0.0.1"
+g.mkdp_port = 8080
+g.mkdp_browserfunc = "OpenMarkdownPreview"
+-- vim.cmd [[
+--   function OpenMarkdownPreview (url)
+--     execute "silent ! open -a Google\ Chrome -n --args --new-window " . a:url
+--   endfunction
+--   let g:mkdp_browserfunc = 'OpenMarkdownPreview'
+-- ]]
