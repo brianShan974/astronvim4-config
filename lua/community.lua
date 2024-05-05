@@ -12,6 +12,8 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
 
+  { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
+
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
   { import = "astrocommunity.motion.leap-nvim" },
