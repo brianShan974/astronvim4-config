@@ -44,3 +44,10 @@ g.mkdp_browserfunc = "OpenMarkdownPreview"
 --   endfunction
 --   let g:mkdp_browserfunc = 'OpenMarkdownPreview'
 -- ]]
+
+-- for transparency
+-- vim.cmd [[
+--   hi! link Conceal Normal
+--   hi! Normal ctermbg=NONE
+--   hi! NonText ctermbg=NONE
+-- ]]
