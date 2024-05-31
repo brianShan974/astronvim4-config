@@ -9,6 +9,8 @@ return {
   "AstroNvim/astrocommunity",
   -- import/override with your plugins folder
 
+  { import = "astrocommunity.color.transparent-nvim" },
+
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
 
@@ -19,6 +21,7 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.tabout-nvim" },
 
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
