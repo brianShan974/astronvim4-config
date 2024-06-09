@@ -14,6 +14,10 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
 
+  -- trouble.nvim won't work if installed by astrocommunity
+  -- only works by using the init.lua file provided by astrocommunity
+  -- { import = "astrocommunity.diagnostics.trouble-nvim" },
+
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
@@ -27,6 +31,8 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
 
-  -- noice.nvim is somehow incompatible with AstroNvim 4.0 on my machine.
+  -- noice.nvim is somehow incompatible with AstroNvim v4 on my machine.
+  -- only works by using the init.lua file provided by astrocommunity
+  -- and by setting the option config.lsp.signature.enabled to false.
   -- { import = "astrocommunity.utility.noice-nvim" },
 }

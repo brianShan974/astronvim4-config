@@ -51,3 +51,8 @@ g.mkdp_browserfunc = "OpenMarkdownPreview"
 --   hi! Normal ctermbg=NONE
 --   hi! NonText ctermbg=NONE
 -- ]]
+
+-- notify
+require("notify").setup {
+  background_colour = "#000000",
+}
