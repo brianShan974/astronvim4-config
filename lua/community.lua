@@ -28,6 +28,7 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.fish" },
+  -- { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.json" },
