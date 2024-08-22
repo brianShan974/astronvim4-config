@@ -26,13 +26,19 @@ return {
   { import = "astrocommunity.motion.tabout-nvim" },
 
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.kotlin" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.swift" },
+  { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
 
   -- noice.nvim is somehow incompatible with AstroNvim v4 on my machine.
