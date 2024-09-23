@@ -20,12 +20,16 @@ return {
 
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
 
+  -- { import = "astrocommunity.lsp.nvim-java" },
+  { import = "astrocommunity.lsp.nvim-lint" },
+
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.tabout-nvim" },
 
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.fish" },
   -- { import = "astrocommunity.pack.go" },
@@ -41,6 +45,8 @@ return {
   { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
+
+  { import = "astrocommunity.programming-language-support.web-tools-nvim" },
 
   -- noice.nvim is somehow incompatible with AstroNvim v4 on my machine.
   -- only works by using the init.lua file provided by astrocommunity
