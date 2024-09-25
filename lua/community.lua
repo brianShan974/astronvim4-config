@@ -11,7 +11,6 @@ return {
 
   { import = "astrocommunity.color.transparent-nvim" },
 
-  { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
 
   -- trouble.nvim won't work if installed by astrocommunity
