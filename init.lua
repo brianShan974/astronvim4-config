@@ -21,11 +21,12 @@ require "lazy_setup"
 require "polish"
 
 -- colorscheme
-if vim.fn.has "mac" then
-  vim.cmd.colorscheme "onedark"
-elseif vim.fn.has "unix" then
-  vim.cmd.colorscheme "catppuccin"
-end
+-- if vim.fn.has "mac" then
+--   vim.cmd.colorscheme "onedark"
+-- elseif vim.fn.has "unix" then
+--   vim.cmd.colorscheme "catppuccin"
+-- end
+vim.cmd.colorscheme "onedark"
 
 -- markdown-preview.nvim
 g.mkdp_auto_start = 1
@@ -56,3 +57,17 @@ g.mkdp_browserfunc = "OpenMarkdownPreview"
 require("notify").setup {
   background_colour = "#000000",
 }
+
+-- Below is config for neovide
+if vim.g.neovide then
+  -- font
+  vim.o.guifont = "CaskaydiaCove Nerd Font:h17"
+
+  -- fullscreen
+  vim.g.neovide_fullscreen = true
+
+  -- cursor vfx
+  vim.g.neovide_cursor_vfx_mode = "railgun"
+  vim.g.neovide_cursor_vfx_particle_lifetime = 1.5
+  vim.g.neovide_cursor_vfx_particle_density = 15.0
+end
