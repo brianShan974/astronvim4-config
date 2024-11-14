@@ -22,7 +22,9 @@ return {
   -- { import = "astrocommunity.lsp.nvim-java" },
   { import = "astrocommunity.lsp.nvim-lint" },
 
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
 
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.tabout-nvim" },
