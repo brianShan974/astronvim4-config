@@ -43,6 +43,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
