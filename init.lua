@@ -58,6 +58,9 @@ require("notify").setup {
   background_colour = "#000000",
 }
 
+-- vimtex
+g.vimtex_view_method = "skim"
+
 -- Below is config for neovide
 if vim.g.neovide then
   -- font
