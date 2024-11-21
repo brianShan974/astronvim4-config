@@ -1,3 +1,5 @@
+-- if true then return {} end
+
 return {
   "xemptuous/sqlua.nvim",
   lazy = true,
