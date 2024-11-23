@@ -22,7 +22,7 @@ return {
   -- { import = "astrocommunity.lsp.nvim-java" },
   { import = "astrocommunity.lsp.nvim-lint" },
 
-  -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.markdown-and-latex.vimtex" },
 
@@ -49,6 +49,8 @@ return {
   { import = "astrocommunity.pack.typescript" },
 
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
+
+  { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
 
   -- noice.nvim is somehow incompatible with AstroNvim v4 on my machine.
   -- only works by using the init.lua file provided by astrocommunity
