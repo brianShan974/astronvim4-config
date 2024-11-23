@@ -21,6 +21,7 @@ require "lazy_setup"
 require "polish"
 
 -- colorscheme
+
 -- if vim.fn.has "mac" then
 --   vim.cmd.colorscheme "onedark"
 -- elseif vim.fn.has "unix" then
@@ -29,39 +30,29 @@ require "polish"
 vim.cmd.colorscheme "onedark"
 
 -- markdown-preview.nvim
--- vim.cmd [[
---   function OpenMarkdownPreview (url)
---     let cmd = "open -a Firefox -n --args --new-window " . shellescape(a:url) . " &"
---     silent call system(cmd)
---   endfunction
--- ]]
--- g.mkdp_open_ip = "127.0.0.1"
--- g.mkdp_port = 8080
--- if vim.loop.os_uname().sysname == "Darwin" then g.mkdp_browser = "/Applications/Google Chrome.app" end
--- g.mkdp_browserfunc = "OpenMarkdownPreview"
--- vim.cmd [[
---   function OpenMarkdownPreview (url)
---     execute "silent ! open -a Google\ Chrome -n --args --new-window " . a:url
---   endfunction
---   let g:mkdp_browserfunc = 'OpenMarkdownPreview'
--- ]]
+
+g.mkdp_auto_close = 0
 
 -- for transparency
+
 -- vim.cmd [[
 --   hi! link Conceal Normal
 --   hi! Normal ctermbg=NONE
 --   hi! NonText ctermbg=NONE
 -- ]]
 
--- notify
+-- nvim-notify
+
 require("notify").setup {
   background_colour = "#000000",
 }
 
 -- vimtex
+
 g.vimtex_view_method = "skim"
 
 -- Below is config for neovide
+
 if vim.g.neovide then
   -- font
   vim.o.guifont = "CaskaydiaCove Nerd Font:h17"
