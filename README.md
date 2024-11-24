@@ -26,3 +26,11 @@ git clone https://github.com/brianShan974/astronvim4-config.git ~/.config/nvim
 ```shell
 nvim
 ```
+
+## Something Else to Have Done
+
+### On M3 Macbook Air
+
+#### `markdown-preview.nvim` doesn't work out of the box
+
+The solution is to `cd` into `~/.local/share/nvim/lazy/markdown-preview.nvim/` and run `npm install`.
