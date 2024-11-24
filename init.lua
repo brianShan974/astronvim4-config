@@ -31,6 +31,7 @@ vim.cmd.colorscheme "onedark"
 
 -- markdown-preview.nvim
 
+g.mkdp_auto_start = 1
 g.mkdp_auto_close = 0
 
 -- for transparency
