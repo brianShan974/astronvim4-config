@@ -7,7 +7,10 @@
   },
   "neoconf": {
     "plugins": {
-      "lua_ls": {
+      // "lua_ls": {
+      //   "enabled": true
+      // },
+      "lspconfig": {
         "enabled": true
       }
     }
@@ -15,6 +18,13 @@
   "lspconfig": {
     "lua_ls": {
       "Lua.format.enable": false
+    },
+    "clangd": {
+      // "clangd.fallbackFlags": ["-xc++-header", "--background-index"]
+      "clangd.arguments": [
+        "-xc++-header",
+        "--background-index"
+      ]
     }
   }
 }
